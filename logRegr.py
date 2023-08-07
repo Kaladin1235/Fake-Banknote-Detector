@@ -24,10 +24,10 @@ def menu():
     do=input("What do you want to do? \n1:take a look at how is the model working \n2:Add and test your own banknote\n3:take a look at the dataset used to train this model\n")
     if do == "1":
         try:
-            print("True positives: ", confusion[0][0])
-            print("True negatives: ", confusion[1][1])
-            print("False positives: ", confusion[1][0])
-            print("False negatives: ", confusion[0][1])
+            print("True negatives: ", confusion[0][0])
+            print("True positives: ", confusion[1][1])
+            print("False negatives: ", confusion[1][0])
+            print("False positives: ", confusion[0][1])
             menu()
         except:
             print("error. re-run the program")
